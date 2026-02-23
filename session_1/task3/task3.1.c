@@ -56,16 +56,27 @@ int main(void) {
 
     /* subtask 1: calculate base bill using slabs */
 	// complete your code here
-    if (units <= 100) {
+    if (0 < units && units <= 100) {
         bill = units * 2.0;
 		// to do
+    } else if(100 < units && units <=200) {
+        int slab2units = units - 100;
+        bill = 200 + (slab2units*3.50);
+    } else if(units > 300) {
+        int slab3units = units - 200;
+        bill = 550 + (slab3units*5);
     }
 
     /* subtask 2: apply surcharge based on customer type */
 	// complete your code here
     switch (customerType) {
         case 1:
-            // to do
+			break;
+        case 2: 
+            bill = bill*1.1;
+			break;
+        case 3: 
+            bill = bill*1.2;
 			break;
 
         default:

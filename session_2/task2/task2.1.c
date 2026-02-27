@@ -15,13 +15,24 @@ int main(void) {
     char scale;
     int valid_input = 0;
     float converted_temp;
+    int format=0;
     
     printf("=== Temperature Converter ===\n");
     
     // TODO: Keep asking until valid input is provided
     // Use an appropriate loop structure
-    
+    do {
         printf("Enter temperature with scale (e.g., 23.5C or 75F): ");
+
+        fgets(input, sizeof(input), stdin);
+        input[strcspn(input, "\n")] = 0;
+        sscanf(input, "%f %c", &temperature, &scale);
+        scale = 
+        
+
+
+    } while (format!=1);
+
         
         // TODO: Use fgets to read the input
         

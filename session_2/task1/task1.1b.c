@@ -1,6 +1,7 @@
 //Week 5, Session 2
 
-# include <stdio.h>
+# include <stdio.h> 
+#include <stdlib.h>
 
 int main(void){
 /* Task 1.1b
@@ -18,10 +19,16 @@ int main(void){
 	int count = 0;   // actual number of results
 	
 	//todo: convert the list comprehension
+	for(int j=0; j<=9; j++) {
+		int toSqr = numbers[j];
+		toSqr = toSqr*toSqr;
+		squares[j]=toSqr;
+		count++;
+	}
 	
 	//print results
 	for(int i=0; i < count; i++){
-	    printf("%d ", squares[i]);
+	    printf("%d\n", squares[i]);
 	}
  
     return 0;

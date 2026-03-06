@@ -13,7 +13,7 @@ int main(void) {
     char input[50];
     float temperature;
     char scale;
-    int valid_input = 0;
+    int valid_input = 0; 
     float converted_temp;
     int format=0;
     

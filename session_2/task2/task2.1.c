@@ -27,11 +27,6 @@ int main(void) {
         fgets(input, sizeof(input), stdin);
         input[strcspn(input, "\n")] = 0;
         sscanf(input, "%f %c", &temperature, &scale);
-        scale = 
-        
-
-
-    } while (format!=1);
 
         
         // TODO: Use fgets to read the input
